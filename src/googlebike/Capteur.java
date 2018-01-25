@@ -1,17 +1,15 @@
 package googlebike;
 import java.io.*;
-import javax.swing.JOptionPane;
-import java.awt.event.*;
 import java.awt.*;
 
 
 
 public class Capteur //extends Frame
 {
-    
+   
 static{
    // System.loadLibrary("K8055fpc64");
-    System.loadLibrary("K8055D");
+    System.loadLibrary("K8055D"); //prendre la version 64 bits
 }
   ICLibrary cl =null;
   float dimRoue=(float)2.1;
